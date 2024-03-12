@@ -1,21 +1,18 @@
 {
-  "name": "capacitor-app",
+  "name": "capacitor-live-reload-bug",
   "version": "1.0.0",
-  "description": "An Amazing Capacitor App",
-  "main": "index.js",
-  "keywords": [
-    "capacitor",
-    "mobile"
-  ],
+  "description": "A simple reproduction for the Capacitor 5.7.2 Android live reload bug",
   "scripts": {
-    "start": "npx cap run android"
+    "start:server": "browser-sync start --server src --files src --port 3000 --no-notify --no-open",
+    "start:android": "npx cap run android -l external"
   },
   "dependencies": {
     "@capacitor/android": "^5.7.2",
-    "@capacitor/core": "latest"
+    "@capacitor/core": "^5.7.2"
   },
   "devDependencies": {
-    "@capacitor/cli": "latest",
+    "@capacitor/cli": "^5.7.2",
+    "browser-sync": "^3.0.2",
     "typescript": "^5.4.2"
   },
   "author": "",
