@@ -1,7 +1,10 @@
 ## Created with Capacitor Create App
 
-This app was created using [`@capacitor/create-app`](https://github.com/ionic-team/create-capacitor-app),
-and comes with a very minimal shell for building an app.
+A minimal reproduction for Android live reload config issues in Capacitor 5.7.2
+
+See https://github.com/ionic-team/capacitor/issues/7323 for the bug
+
+This app was created using [`@capacitor/create-app`](https://github.com/ionic-team/create-capacitor-app).
 
 ### Running this example
 
