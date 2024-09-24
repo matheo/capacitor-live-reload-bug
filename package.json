@@ -1,19 +1,19 @@
 {
   "name": "capacitor-live-reload-bug",
   "version": "1.0.0",
-  "description": "A simple reproduction for the Capacitor 5.7.2 Android live reload bug",
+  "description": "A simple reproduction for the Android live-reload without https",
   "scripts": {
-    "start:server": "browser-sync start --server src --files src --port 3000 --no-notify --no-open",
-    "start:android": "npx cap run android -l external"
+    "start:server": "browser-sync start --server src --files src --port 443 --no-notify --no-open",
+    "start:android": "npx cap run android -l --port 443"
   },
   "dependencies": {
-    "@capacitor/android": "^5.7.2",
-    "@capacitor/core": "^5.7.2"
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
   },
   "devDependencies": {
-    "@capacitor/cli": "^5.7.2",
-    "browser-sync": "^3.0.2",
-    "typescript": "^5.4.2"
+    "@capacitor/cli": "^6.1.2",
+    "browser-sync": "^3.0.3",
+    "typescript": "5.5.4"
   },
   "author": "",
   "license": "ISC"
